@@ -14,5 +14,9 @@ async def brexit(ctx):
 @bot.command()
 async def uwu(ctx):
     await ctx.send("0w0")
+    
+@commands.command()
+async def yeet(ctx):
+    await ctx.send("(╯°□°）╯︵ ┻━┻")
 
 bot.run("token")
