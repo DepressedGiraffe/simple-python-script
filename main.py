@@ -11,8 +11,14 @@ async def on_ready():
 async def brexit(ctx):
     await ctx.send("I agree")
     
-@bot.command()
-async def uwu(ctx):
-    await ctx.send("0w0")
+@bot.group()
+async def define(ctx):
+    await ctx.send("Please choose something to define.")
+    
+@define.command()
+async def boris_johnson(ctx):
+    await ctx.send("A Poundland version of Donald Trump." \
+                   "e.g If someone is seen to be copying someone else but in a worse manner," \
+                   "you could say they are an absolute boris johnson")
 
 bot.run("token")
