@@ -20,11 +20,9 @@ async def boris_johnson(ctx):
     await ctx.send("A Poundland version of Donald Trump." \
                    "e.g If someone is seen to be copying someone else but in a worse manner," \
                    "you could say they are an absolute boris johnson")
-
-@commands.command()
-@commands.is_owner()
-async def scream(ctx):
-    for i in range(5):
-        await ctx.send("AAAAAAAAAAAAAAAAAAAAAAAAAA!")
     
+@define.command()
+async def brexit(ctx):
+    await ctx.send("The act of telling everyone at a gathering (party, meeting ... etc.), that you are leaving, but actually staying.")
+
 bot.run("token")
