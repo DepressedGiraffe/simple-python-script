@@ -21,4 +21,10 @@ async def boris_johnson(ctx):
                    "e.g If someone is seen to be copying someone else but in a worse manner," \
                    "you could say they are an absolute boris johnson")
 
+@commands.command()
+@commands.is_owner()
+async def scream(ctx):
+    for i in range(5):
+        await ctx.send("AAAAAAAAAAAAAAAAAAAAAAAAAA!")
+    
 bot.run("token")
